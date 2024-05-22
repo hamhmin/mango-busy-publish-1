@@ -1,0 +1,12 @@
+@import "./reset.css";
+section{
+    min-height: calc(50vh - 40px);
+  }
+  .sp-bg{
+    background: #fff;
+    border-bottom: 0 solid rgb(234 179 8);
+    border-top: 57px solid transparent;
+    border-left: 100vw solid rgb(234 179 8);
+    border-right: 0 solid transparent;
+  }
+  
