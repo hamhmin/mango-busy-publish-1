@@ -18,7 +18,8 @@
         <div>
             <a href="#">ONETRILLION<br />(주)원트릴리온</a>
         </div>
-        <div class="link_box">
+        <div class="mo_nav_open for_mo"><img src="/img/open.svg" alt="언어 선택"></div>
+        <div class="link_box mo_hide">
             <a href="#">Home</a>
             <a href="#">Mango Busy</a>
             <a href="#">브랜드</a>
@@ -27,8 +28,10 @@
             <a href="#">ODM/OEM</a>
             <a href="#">유통/마케팅</a>
             <a href="#">인재채용</a>
+            <div class="mo_nav_close for_mo"><img src="/img/close.svg" alt="언어 선택"></div>
         </div>
-        <div class="lang"><img src="/img/earth.svg" alt="언어 선택"></div>
+        <div class="lang mo_hide"><img src="/img/earth.svg" alt="언어 선택"></div>
+        
     </nav>
     <main class="">
         <section class="section_01">
@@ -134,7 +137,7 @@
                             <div class="flex_link_row">
                                 <h3>ROSYROY</h3>
                                 <h3>AMIYA</h3>
-                                <h3>&nbsp;&nbsp; HYGGEE</h3>
+                                <h3><span class="mo_hide">&nbsp;&nbsp; </span>HYGGEE</h3>
                             </div>
                             <h3>JM SOLUTION</h3>
                             <h3>SARANARA</h3>
@@ -293,6 +296,18 @@
         </div>
     </footer>
 
+    <script>
+        const openBtn = document.querySelector(".mo_nav_open");
+        const closeBtn = document.querySelector(".mo_nav_close");
+        const nav = document.querySelector(".link_box");
+
+        openBtn.addEventListener("click",function(){
+            nav.classList.add("on");
+        })
+        closeBtn.addEventListener("click",function(){
+            nav.classList.remove("on");
+        })
+    </script>
 </body>
 
 </html>
