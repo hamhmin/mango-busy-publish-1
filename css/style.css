@@ -191,8 +191,26 @@ section {
 
 
 
+.oem-odm .section-title{font-size: 28px; font-weight: bold; margin-bottom: 23px;}
+.oem-odm  .odm_box { gap: 24px;}
+.odm_box_item1{width: 55%;}
+.odm_box_item2{width: 45%; min-width: 350px; max-height: 350px; object-fit: cover;}
+
+.map-section{margin: 0;width: 100vw;}
+.map-section img{width: 100vw;}
+
+
+
+
 /* section gap */
 .intros{margin-bottom: 90px;}
 .brands{margin-bottom: 60px;}
 .stores{margin-bottom: 96px;}
 .marketing{margin-bottom: 78px;}
+.oem-odm{margin-bottom: 85px;}
+
+
+.footer{width: 100vw; display: flex; gap: 120px; justify-content: center; align-items: center;padding: 30px; flex-wrap: wrap; row-gap: 20px;} 
+.left_box{gap: 20px; flex-wrap: wrap;}
+.icon-box{gap: 20px;}
+.email_tel_box{gap: 10px; flex-wrap: wrap; row-gap: 0;}
