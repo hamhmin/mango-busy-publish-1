@@ -216,15 +216,16 @@ section {
 
 
 .footer{width: 100vw; display: flex; gap: 120px; justify-content: center; align-items: center;padding: 30px; flex-wrap: wrap; row-gap: 20px;} 
-.left_box{gap: 20px; flex-wrap: wrap;}
-.icon-box{gap: 20px;}
+.footer .left_box{gap: 20px; flex-wrap: wrap;}
+.footer .icon-box{gap: 20px;}
 .email_tel_box{gap: 10px; flex-wrap: wrap; row-gap: 0;}
 
 .oem-odm .img_box{display: none;}
     .pc_hide{display: none !important;}
 @media screen and (max-width:780px) {
     /* 780px 이하 */
-    .mo_hide{display: none !important;}
+.logo .pc_hide {display: flex !important; align-items: center;}
+.mo_hide{display: none !important;}
     .pc_hide{display: block !important;}
     /* .nav{display: none;} */
     .nav{
@@ -252,7 +253,6 @@ section {
     .cta-button img{width: 30px;}
     .logo .logo_img{width: 50vw; max-width: 280px; object-fit: contain;}
     .logo{justify-content: space-between; padding: 0 20px;}
-    .logo .pc_hide {display: flex; align-items: center;}
     .logo .pc_hide img{width: 24px;}
     .logo .pc_hide svg{width: 30px;}
     .section-main{height: 360px;padding-top: 40px;}
@@ -291,3 +291,8 @@ section {
     .footer{justify-content: start;}
 
 }
+
+
+
+
+
