@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONETRILLION</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/oem.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main-content mango_busy">
+        <div class="section-main">
+            <header class="header">
+                <div class="logo">
+                    <div class="pc_hide menu_open_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="24px" fill="#242424"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    </div>
+                    <img class="logo_img" src="/img2/logo1.png" alt="logo">
+                    <div class="pc_hide">
+                        <img src="/img3/26.png" alt="">
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/page/mango_busy.html">MANGO BUSY</a></li>
+                        <li><a href="#">온라인 방송</a></li>
+                        <li><a href="#">해외 박람회</a></li>
+                        <li><a href="/page/oem.html">ODM/OEM</a></li>
+                        <li><a href="/page/marketing.html">유통/마케팅</a></li>
+                        <li><a href="/page/employment.html">인재채용</a></li>
+                        <li class="mo_hide"><a href="#"><img src="/img2/16.png"></a></li>
+                    </ul>
+                    <div class="pc_hide">
+                        <svg class="menu_close_btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  fill="#222"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <section class="oem-main">
+            <div class="title_box">
+                <h2 class="section-title">OEM/ODM</h2>
+            </div>
+            <div class="img_box">
+                <img src="/img6/1.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="oem-odm">
+            <div class="flex odm_box">
+                <div class="odm_box_item1">
+                    원트릴리온 (Onetrillion)의 망고비지 (Mango Busy)는 모기입업인 원엠글로벌 (One M Global)과의 제휴를 통해 국의 최신단 화장품 제조 시설과 화장품 개발을 위한 많은 인증 및 검증된 최신 기술을 이용할 수 있습니다. 이러한 전략적 파트너십을 통해 우리는 최고의 인력으로 검증된 품질의 제품과 뛰어난 서비스를 파트너에게 제공할 수 있습니다.
+                    <br><br>우수한 기술력과 품질 수준을 바탕으로 트렌드 파악, 상품 기획, 개발, 출하, 관리에 이르기까지 체계적인 토탈 서비스를 제공합니다. 브랜드 기업이 든든한 서포터로서 K뷰티가 세계를 뻗어나갈 수 있도록 지원합니다.
+                    <br><br><img class="hide-oem-img" src="/img2/9.png" alt="">
+                </div>
+                <img class="odm_box_item2" src="/img2/17.png" alt="">
+            </div>
+
+
+        </section>
+        <footer class="footer">
+            <div class="flex left_box">
+                <div class="flex flex-middle">
+                    <img class="one_logo" src="/img2/11.png" alt="">
+                </div>
+                <div class="flex flex-col text_box">
+                    <p><strong>Ad.</strong> 서울특별시 중구 명동길 56, 7층</p>
+                    <div class="flex email_tel_box">
+                        <p><strong>E-Mail.</strong> onetrillion2023@naver.com</p>
+                        <p><strong>Tel.</strong> 02-2528-8587</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex icon-box">
+                <img class="sns-icon" src="/img2/12.png" alt="">
+                <img class="sns-icon" src="/img2/13.png" alt="">
+                <img class="sns-icon" src="/img2/14.png" alt="">
+            </div>
+
+        </footer>
+    </main>
+    
+    <script>
+
+        $(document).ready(function(){
+            $(".menu_open_btn").click(function() {
+                $(".nav").addClass("active");
+            })
+            $(".menu_close_btn").click(function(){
+                $(".nav").removeClass("active");
+            });
+        })
+
+
+
+        const boxes = document.querySelectorAll('.box');
+        let currentIndex = 0;
+        let intervalId;
+
+        function activateBox(index) {
+            boxes.forEach((box, i) => {
+                box.classList.remove('active');
+                if (i === index) {
+                    box.classList.add('active');
+                    $(box).children("img").attr("src","/img2/4.png")
+                }else{
+                    $(box).children("img").attr("src","/img2/3.png")
+                }
+            });
+        }
+
+        activateBox(currentIndex);
+        currentIndex = (currentIndex + 1) % boxes.length;
+
+        function startAutoActivation() {
+            intervalId = setInterval(() => {
+                activateBox(currentIndex);
+                currentIndex = (currentIndex + 1) % boxes.length;
+            }, 3000);
+        }
+
+        function stopAutoActivation() {
+            clearInterval(intervalId);
+        }
+
+        boxes.forEach((box, index) => {
+            box.addEventListener('mouseenter', () => {
+                stopAutoActivation();
+                activateBox(index);
+            });
+
+            box.addEventListener('mouseleave', () => {
+                startAutoActivation();
+            });
+        });
+
+        startAutoActivation();
+    </script>
+</body>
+</html>

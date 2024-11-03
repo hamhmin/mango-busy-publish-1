@@ -1,0 +1,37 @@
+
+
+.mango_busy {overflow: hidden;}
+.section-main{
+    padding: 0;
+}
+.header{padding: 40px 0; background: #fff; }
+.nav-list a{color: #242424;}
+.logo_img{max-width:291px}
+.section-main{background: transparent; height: auto;color: #242424; margin: 0;}
+.section-main::after{content:none}
+
+.marketing-main{ 
+    margin: 0;
+    padding-bottom: 80px; 
+    background-image: url(/img5/1.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 489px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 50px;
+}
+.marketing-main .section-title{font-size: 32px; font-weight: bold;color: #fff;}
+
+
+@media screen and (max-width:780px) {
+    .marketing-main{ 
+        margin: 0;
+        padding-bottom: 60px; 
+        min-height: 346px;
+        margin-bottom: 50px;
+    }
+.marketing-main .section-title{font-size: 18px; font-weight: bold;color: #fff;}
+}

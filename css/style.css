@@ -191,7 +191,7 @@ section {
 .marketing .marketing-info .title_box{ width: 410px; padding-top: 40px; font-weight: bold; font-size: 28px; position: relative; display: flex;justify-content: center;align-items: center;}
 .marketing .marketing-info .title_box .img_box{position: absolute; top: -15px;left: 50%;transform: translateX(-50%);}
 .marketing .marketing-info .title_box img{z-index: 2;position: relative;}
-.marketing .marketing-info .title_box .img_box::after{content:"";position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%); width: calc(100% + 24px);height: calc(100% + 24px); background-color: white;}
+.marketing .marketing-info .title_box .img_box::after{content:"";position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%); width: calc(100% + 24px);height: calc(100%); background-color: white;}
 .marketing .marketing-info p{padding: 20px; font-size: 18px; display: flex;align-items: center;justify-content: center;}
 
 

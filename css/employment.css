@@ -1,0 +1,63 @@
+
+
+.mango_busy {overflow: hidden;}
+.section-main{
+    padding: 0;
+}
+.header{padding: 40px 0; background: #fff; }
+.nav-list a{color: #242424;}
+.logo_img{max-width:291px}
+.section-main{background: transparent; height: auto;color: #242424; margin: 0;}
+.section-main::after{content:none}
+
+.intros{margin: 0; padding: 60px 8%; background-color: #A6D1F4;}
+.intros .flex_box{display: flex;width: 100%; justify-content: center;}
+.intros .flex_box img{width: 100%; object-fit: contain;}
+.intros .flex_box .img_box{width: 40%;}
+
+@media screen and (max-width:780px) {
+.intros .flex_box{display: flex;width: 100%; justify-content: center; flex-direction: column; align-items: center;}
+.intros{margin: 0; padding: 30px 8%; background-color: #A6D1F4;}
+
+
+
+
+.intros .text_box{font-size: 14px; padding: 0 30px;}
+    .brands  img{width: 50%;}
+    .brands  .text_box{font-size: 14px;padding: 0 30px;}
+
+    .story{background-image: url(/img3/27.png);}
+    .story .left_box{top: 0;left: 50%;transform: translateX(-50%); padding: 10px 0 0 10px;width: 100px; height: 110px;font-size: 14px;}
+    .story .right_box{flex-direction: column;}
+    .story .story_box{flex-direction: column;padding: 0 30px;}
+    .story .story_box1{margin-top: 150px;}
+    .story .title::before{top:none;top: 100%;left: 50%;transform: translate(-50%, -50%);}
+    .story .title::after{width: 1px; height: 40px;top: 100%;left: 50%;transform: translateX(-50%)}
+
+    .partner .section-title{text-align: center;}
+    .partner .ab_box img{width: 60px;}
+    .partner .partner_box{justify-content: center; gap: 20px; padding: 0 30px;}
+    .partner .left_box ul{margin-left: 10px;}
+    .partner .ab_box p{font-size: 16px;}
+    .partner .banner{width: 98px; height: 123px;}
+    .partner .left_box ul li >div{width: 25px;height: 25px;}
+    .partner .left_box ul li{font-size: 13px; white-space: nowrap;}
+    .partner .left_box ul li:nth-child(2){margin-left: 45px; margin-top: 4px; margin-bottom: 4px;}
+    .partner .left_box ul li:nth-child(3){margin-left: 60px; margin-bottom: 8px;}
+    .partner .left_box ul li:nth-child(4){margin-left: 60px; margin-bottom: 4px;}
+    .partner .left_box ul li:nth-child(5){margin-left: 45px; margin-bottom: 4px;}
+
+    .mango-brand .title_box img{width: 20%;}
+    .mango-brand .title_box{margin-bottom: 10px;}
+
+    
+    .brands{padding: 30px;overflow: scroll;}
+    .brands img{min-width: 100px;}
+    
+    .faq .faq-item{width: calc((100% - 20px) /2);}
+    .faq .faq-area{gap: 10px; row-gap: 30px;}
+
+    .earth .content-area{align-items: end;}
+    .earth .top-box{flex-direction: column; gap: 10px;}
+    .earth .content-box{width: 268px;}
+}
