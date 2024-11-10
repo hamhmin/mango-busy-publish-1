@@ -67,5 +67,34 @@ background-size: cover;
 
 
 @media screen and (max-width:780px) {
-   
+ 
+    .intros .logo_box1{font-size: 16px;}
+    .live_img{max-width: 48%;}
+    .intros .text_box{font-size: 14px; width: 80%; word-break: keep-all;}
+    .intros .text_box br{display: none;}
+
+    .intros .logo_box{gap:20px}
+    .intros .logo_box img{width: 24px;}
+
+.contact .contact_box{ overflow: scroll; justify-content: start;align-items: start;}
+.contact{padding-bottom: 120px; position: relative;display: block;}
+.contact .contact_img{position: absolute;bottom: 40px; left: 50%; transform: translateX(-50%); width: 50%;}
+.contact .wrap{overflow: scroll;}
+.contact_item{width: 20%; min-width: 200px;}
+.contact_item:nth-child(1){margin-left: 20%;}
+
+
+.shopping::before{width: 24%;}
+.shopping::after{width: 50%;}
+
+
+.shopping_box{padding-left:30px;width: 60%;}
+.shop_logos{row-gap: 10px; gap: 20px;}
+
+.soon{}
+.soon_box{margin: 0 auto;}
+.soon .logo_box{font-size: 20px;}
+.soon .logo_box img{width: 24px;}
+.soon .soon_box{height: 200px; width: 80%;}
+.soon .soon_box img{width: 100%;}
 }

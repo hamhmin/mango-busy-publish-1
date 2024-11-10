@@ -9,7 +9,7 @@
 .logo_img{max-width:291px}
 .section-main{background: transparent; height: auto;color: #242424; margin: 0;}
 .section-main::after{content:none}
-.intros{ margin: 0;  padding: 45px 0; justify-content: center; align-items: center; gap: 30px;}
+.intros{ margin: 0;  padding-bottom: 45px; justify-content: center; align-items: center; gap: 30px;}
 
 .date{display: flex; flex-direction: column;}
 .date .text_box{display: flex; justify-content: space-between; font-weight: bold; font-size: 28px;}
@@ -112,5 +112,39 @@
     
 
 @media screen and (max-width:780px) {
+    .date .logo_box{gap: 4px;}
+.date .text_box{display: flex; justify-content: space-between; font-weight: bold; font-size: 20px; white-space: nowrap
+    ;}
+    .date .contry_item{width: 50% !important; padding: 10px !important;}
+.date .logo_box img{width: 20px; height: 25px;}
+.date .contry_item p{font-size: 16px;}
+.date .contry_item h3{font-size: 20px;}
+.date .contry_item::before{width: 14px; height: 14px;}
+.date .contry_item::after{width: 32px;}
 
+.new_plan_box{gap:10px;}
+.new_plan_box .plan_item{width: calc(50% - (10px / 2));}
+
+.new_plan h3{font-size: 22px;}
+.new_plan_box .text_box{font-size: 14px;}
+
+.corp_box{flex-direction: column; align-items: center;}
+.corp_box .corp_item{ width: 80%;}
+.corp_box .corp_item .line{display: none;}
+.corp_plan .section-title{font-size: 24px;}
+.corp_plan{margin-top: 40px;}
+
+
+.merit > .text_box{justify-content: center;}
+.merit .logo_box{font-size: 16px; gap: 8px; flex-wrap: wrap;}
+.merit .logo_box img{width: 24px; height: 30px;}
+.merit .text_box span{font-size: 20px;}
+.merit_item{width: 90%;}
+.merit_box{justify-content: center;}
+.merit_box::after{content: none;}
+
+.schedule{padding: 40px 20px;}
+.schedule .contry_box{gap: 10px;}
+.schedule .contry_item{width: 20%; font-size: 10px; white-space: nowrap; text-align: center
+    ;}
 }

@@ -289,6 +289,7 @@ section {
     .marketing .marketing-info p{padding: 16px; font-size: 14px; line-height: 120%;}
 
     .footer{justify-content: start;}
+    .brands .brand-list ul li{display: flex;justify-content: center;align-items: center;}
 
 }
 
