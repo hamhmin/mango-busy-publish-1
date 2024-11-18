@@ -135,9 +135,10 @@ section {
 .brands .title_box { margin-bottom: 55px;}
 .brands .brand-list > div{border-top: 1px solid #969696; padding: 40px 0; font-size: 22px;}
 .brands .brand-list > div:last-child{border-bottom: 1px solid #969696;}
-.brands .brand-list h3{min-width: 140px; display: flex;align-items: center;}
+.brands .brand-list h3{min-width: 140px; display: flex;align-items: center; font-size: 26px;white-space: nowrap;}
 .brands .brand-list ul{display: flex; justify-content: space-between;width: 100%;align-items: center; color: #444;}
 .brands .brand-list ul li{width: 33%; text-align: center;}
+.brands .brand-list ul li img{width: 86%;}
 .brands .brand-list ul >img{margin-left: 20px;}
 
 .stores .section-title{font-weight: bold; font-size: 28px; margin-bottom: 36px;}
@@ -197,8 +198,9 @@ section {
 
 
 .oem-odm .section-title{font-size: 28px; font-weight: bold; margin-bottom: 23px;}
-.oem-odm  .odm_box { gap: 24px;}
-.odm_box_item1{width: 55%;}
+.oem-odm .odm_box { gap: 24px; justify-content: center;}
+
+.odm_box_item1{width: 55%; max-width: 400px;}
 .odm_box_item2{width: 45%; min-width: 350px; max-height: 350px; object-fit: cover;}
 
 .map-section{margin: 0;width: 100vw;}
@@ -267,7 +269,7 @@ section {
     .brands .title_box p{max-width: 100%;}
     .brands .brand-list > div{padding: 6px 0;}
     .hide-brand{display: none;}
-    .brands .brand-list h3{min-width: 120px;font-size: 18px;}
+    .brands .brand-list h3{min-width: 120px;font-size: 16px;}
     .brand-list ul img{width: 30px; height: 30px;}
     .brand-list ul{align-items: center;}
     .brand-list ul li{font-size:12px;}

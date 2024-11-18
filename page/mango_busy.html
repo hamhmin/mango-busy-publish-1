@@ -137,20 +137,27 @@
                         <li><div><img src="/img3/9.png" alt=""></div><p>상품등록 및 판매</p></li>
                     </ul>
                 </div>
-                <img class="banner" src="/img3/14.png" alt=""> 
+                <a href="mailto:onetrillion@onetrillion.co.kr?subject=&body="><img class="banner" src="/img3/14.png" alt=""> </a>
             </div>
         </section>
 
         <section class="store-info">
             <div class="slide_section">
-                <h2 class="section-title">매장 소개 <br>및 사진</h2>
-                <div class="store-slide-area">
+                <h2 class="section-title">매장 소개 및 사진</h2>
+                <!-- <div class="store-slide-area">
                     <div class="store-box active">명동<br>1호점<p>위치<br>소개</p></div>
                     <div class="store-box">롯데 영플라자<br>2호점<p>위치<br>소개</p></div>
                     <div class="store-box">인천 인스파이어<br>3호점<p>위치<br>소개</p></div>
                     <div class="store-box">동대문<br>4호점<p>위치<br>소개</p></div>
                     <div class="store-box">dummy<p>위치<br>소개</p></div>
-                </div>
+                </div> -->
+                <ul class="flex">
+                    <li  class="box" id="box1">Mango busy<br> 명동 1호점<img src="/img2/3.png" alt=""></li>
+                    <li  class="box" id="box2">Mango busy<br> 롯데영플라자 2호점<img src="/img2/3.png" alt=""></li>
+                    <li class="box" id="box3">Mango busy<br> 동대문점<img src="/img2/3.png" alt=""></li>
+                    <li class="box" id="box4">Mango busy<br> 인천 인스파이어점<img src="/img2/3.png" alt=""></li>
+                    <li class="box" id="box4">Coming Soon<img src="/img2/3.png" alt=""></li>
+                </ul>
             </div>
             <div class="slide_btn_box flex">
                 <div class="slide_btn"><img src="/img3/17.png" alt=""></div>
@@ -167,9 +174,9 @@
                 </div>
                 <div class="brand-area flex">
                     <div class="brand-tab">
-                        <div class="active">회사 브랜드</div>
-                        <div class="">입점 브랜드</div>
-                        <div class="">파트너 브랜드</div>
+                        <div class="brand-tab-box active">회사 브랜드</div>
+                        <div class="brand-tab-box ">입점 브랜드</div>
+                        <div class="brand-tab-box ">파트너 브랜드</div>
                     </div>
                     <div class="brands">
                         <div class="flex">
@@ -248,16 +255,16 @@
                 <div class="flex flex-col text_box">
                     <p><strong>Ad.</strong> 서울특별시 중구 명동길 56, 7층</p>
                     <div class="flex email_tel_box">
-                        <p><strong>E-Mail.</strong> onetrillion2023@naver.com</p>
-                        <p><strong>Tel.</strong> 02-2528-8587</p>
+                        <p><strong>E-Mail.</strong> onetrillion@onetrillion.co.kr</p>
+                        <p><strong>Tel.</strong> 070-8880-8053</p>
                     </div>
 
                 </div>
             </div>
             <div class="flex icon-box">
-                <img class="sns-icon" src="/img2/12.png" alt="">
-                <img class="sns-icon" src="/img2/13.png" alt="">
-                <img class="sns-icon" src="/img2/14.png" alt="">
+                <a href="https://www.tiktok.com/@mangobusy_official" target="_blank"><img class="sns-icon" src="/img2/12.png" alt=""></a>
+                <a href="https://www.instagram.com/mangobusy_official/#" target="_blank"><img class="sns-icon" src="/img2/13.png" alt=""></a>
+                <a href="http://www.mangobusy.com" target="_blank"><img class="sns-icon" src="/img2/14.png" alt=""></a>
             </div>
 
         </footer>
@@ -272,6 +279,12 @@
             $(".menu_close_btn").click(function(){
                 $(".nav").removeClass("active");
             });
+
+            $(".brand-tab-box").hover(function(){
+                $(".brand-tab-box").removeClass("active");
+                $(this).addClass("active")
+            });
+
         })
 
 

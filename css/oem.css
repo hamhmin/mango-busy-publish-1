@@ -24,8 +24,8 @@
     padding: 55px 10px;
 }
 
-.oem-main .title_box{display: flex;flex-direction: column;justify-content: center;align-items: end;width: 45%; font-size: 32px;font-weight: bold;color: #fff; padding-right: 30px;}
-.oem-main .img_box{width: 50%;}
+.oem-main .title_box{display: flex;flex-direction: column;justify-content: center;align-items: end;width: 35%; font-weight: bold;color: #fff; padding-right: 30px; padding-bottom: 30px; font-size: 40px;}
+.oem-main .img_box{width: 65%;}
 .oem-main img{width: 100%;}
 .odm_box_item2{max-height: 100%;}
 @media screen and (max-width:780px) {
