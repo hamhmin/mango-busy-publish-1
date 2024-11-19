@@ -152,16 +152,16 @@
                     <div class="store-box">dummy<p>위치<br>소개</p></div>
                 </div> -->
                 <ul class="flex">
-                    <li  class="box" id="box1">Mango busy<br> 명동 1호점<img src="/img2/3.png" alt=""></li>
-                    <li  class="box" id="box2">Mango busy<br> 롯데영플라자 2호점<img src="/img2/3.png" alt=""></li>
-                    <li class="box" id="box3">Mango busy<br> 동대문점<img src="/img2/3.png" alt=""></li>
-                    <li class="box" id="box4">Mango busy<br> 인천 인스파이어점<img src="/img2/3.png" alt=""></li>
-                    <li class="box" id="box4">Coming Soon<img src="/img2/3.png" alt=""></li>
+                    <li  class="box openMapBox" id="box1" data-num="1">Mango busy<br> 명동 1호점<img src="/img2/3.png" alt=""></li>
+                    <li  class="box openMapBox" id="box2" data-num="2">Mango busy<br> 롯데영플라자 2호점<img src="/img2/3.png" alt=""></li>
+                    <li class="box openMapBox" id="box3" data-num="3">Mango busy<br> 동대문점<img src="/img2/3.png" alt=""></li>
+                    <li class="box openMapBox" id="box4" data-num="4">Mango busy<br> 인천 인스파이어점<img src="/img2/3.png" alt=""></li>
+                    <li class="box" id="box5">Coming Soon<img src="/img2/3.png" alt=""></li>
                 </ul>
             </div>
             <div class="slide_btn_box flex">
-                <div class="slide_btn"><img src="/img3/17.png" alt=""></div>
-                <div class="slide_btn"><img src="/img3/16.png" alt=""></div>
+                <div class="intro_slide_btn" data-type="prev"><img src="/img3/17.png" alt=""></div>
+                <div class="intro_slide_btn" data-type="next"><img src="/img3/16.png" alt=""></div>
             </div>
 
 
@@ -194,8 +194,8 @@
                     </div>
                 </div>
                 <div class="slide_btn_box flex">
-                    <div class="slide_btn"><img src="/img3/17.png" alt=""></div>
-                    <div class="slide_btn"><img src="/img3/16.png" alt=""></div>
+                    <div class="brand_slide_btn" data-type="prev"><img src="/img3/17.png" alt=""></div>
+                    <div class="brand_slide_btn" data-type="next"><img src="/img3/16.png" alt=""></div>
                 </div>
             </div>
         </section>
@@ -269,7 +269,44 @@
 
         </footer>
     </main>
-    
+
+
+    <div class="mapModal hide">
+        <div id="daumRoughmapContainer1732017612218" class="root_daum_roughmap root_daum_roughmap_landing mapdiv mapdiv1"></div>
+        <div id="daumRoughmapContainer1732018836176" class="root_daum_roughmap root_daum_roughmap_landing mapdiv mapdiv2"></div>
+    <div id="daumRoughmapContainer1732022289139" class="root_daum_roughmap root_daum_roughmap_landing mapdiv mapdiv3"></div>
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1732017612218",
+                "key" : "2ma5g",
+                "mapWidth" : "250",
+                "mapHeight" : "300"
+            }).render();
+        </script>
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1732018836176",
+                "key" : "2ma5i",
+                "mapWidth" : "250",
+                "mapHeight" : "300"
+            }).render();
+        </script>
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1732022289139",
+                "key" : "2ma5q",
+                "mapWidth" : "250",
+                "mapHeight" : "300"
+            }).render();
+        </script>
+        <div class="right_box">
+            <div class="info_top">Mango busy<br>명동 1호점</div>
+            <div class="info_bottom">서울 중구 명동길 52<br>MANGO BUSY</div>
+        </div>
+                <div class="closeBtn">X</div>
+            </div>
     <script>
 
         $(document).ready(function(){
@@ -285,12 +322,56 @@
                 $(this).addClass("active")
             });
 
+            $(".openMapBox").on("click",function(){
+                $(".mapModal").removeClass("hide");
+                console.log();
+                var num = $(this).attr("data-num");
+                $(".mapdiv").addClass("hide")
+                switch (num) {
+                    case "1":
+                        $(".info_top").html("Mango busy<br>명동 1호점");
+                    $(".info_bottom").html("서울 중구 명동길 52 <br>MANGO BUSY")
+                        $(".mapdiv1").removeClass("hide");
+                        break;
+                    case "2":
+                    $(".info_top").html("Mango busy<br>명동 롯데영플라자 2호점");
+                    $(".info_bottom").html("서울 중구 남대문로 67 롯데영플라자 <br>MANGO BUSY")
+                    $(".mapdiv2").removeClass("hide");
+                    
+                        break;
+                    case "3":
+                    $(".info_top").html("Mango busy<br>명동 동대문점");
+                    $(".info_bottom").html("서울 중구 퇴계로73길 40 승리빌딩 <br>MANGO BUSY")
+                    $(".mapdiv3").removeClass("hide");
+                    
+                        break;
+                    case "4":
+                    $(".info_top").html("Mango busy<br>인천 인스파이어점");
+                    $(".mapdiv1").removeClass("hide");
+                    
+                        break;
+                }
+            });
+            $(".closeBtn").click(()=>{
+                $(".mapModal").addClass("hide");
+            })
+
+            $(".brand_slide_btn").on("click",function(){
+                var type= $(this).attr("data-type");
+                    const brands = document.querySelector('.brand-area .brands');
+                    console.log(brands)
+                if(type == "next"){
+                    brands.scrollLeft += 100; // 100px 만큼 가로 스크롤 이동
+                } else if(type == "prev"){ 
+                    brands.scrollLeft -= 100; // 100px 만큼 가로 스크롤 이동
+                } 
+            });
         })
 
 
 
         const boxes = document.querySelectorAll('.box');
-        let currentIndex = 0;
+        let currentIndex = -1;
         let intervalId;
 
         function activateBox(index) {
@@ -305,13 +386,13 @@
             });
         }
 
-        activateBox(currentIndex);
         currentIndex = (currentIndex + 1) % boxes.length;
+        activateBox(currentIndex);
 
         function startAutoActivation() {
             intervalId = setInterval(() => {
-                activateBox(currentIndex);
                 currentIndex = (currentIndex + 1) % boxes.length;
+                activateBox(currentIndex);
             }, 3000);
         }
 
@@ -331,6 +412,27 @@
         });
 
         startAutoActivation();
+
+
+        
+        $(".intro_slide_btn").on("click",function(){
+                var type= $(this).attr("data-type");
+                stopAutoActivation();
+                if(type == "next"){
+                    currentIndex = (currentIndex + 1) % boxes.length;
+                    activateBox(currentIndex);
+                } else if(type == "prev"){ 
+                    currentIndex = (currentIndex - 1) % boxes.length;
+                    if(currentIndex <= -1) currentIndex = boxes.length -1
+                    activateBox(currentIndex);
+                }
+            startAutoActivation();
+        });
+
+            setInterval(() => {
+                console.log(currentIndex)
+                
+            }, 500);
     </script>
 </body>
 </html>

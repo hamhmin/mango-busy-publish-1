@@ -88,9 +88,9 @@
 .earth{margin: 0; background-color: #FAC303; padding-top: 40px; padding-bottom: 49vw;position: relative;background-image: url(/img3/24.png); background-repeat: no-repeat;background-size: 90%; background-position: 40% 60%;}
 .earth .section-title{font-size: 28px; font-weight: bold;}
 .earth .top-box{display: flex;justify-content: space-between; margin:0 8.03%}
-.earth .content-area{display: flex; flex-direction: column;}
-.earth .content-box{display: flex;gap: 4px;align-items: center;}
-.earth .left_box{border-radius: 999px; background-color: #fff;width: 40px;height: 40px; display: flex;align-items: center;justify-content: center;}
+.earth .content-area{display: flex; flex-direction: column; gap: 10px;}
+.earth .content-box{display: flex;gap: 12px;align-items: center;}
+.earth .left_box{border-radius: 999px; background-color: #fff;width: 50px;height: 50px; display: flex;align-items: center;justify-content: center;}
 .earth .left_box img{width: 80%;object-fit: contain;}
 .earth .ab-text{position: absolute;bottom: 30px; text-align: center;left: 50%;transform: translateX(-50%);font-weight: normal;}
 
@@ -171,13 +171,20 @@
     .mango-brand .title_box{margin-bottom: 10px;}
 
     
-    .brands{padding: 30px;overflow: scroll;}
+    .brands{padding: 30px;overflow: scroll; align-items: start;}
     .brands img{min-width: 100px;}
     
     .faq .faq-item{width: calc((100% - 20px) /2);}
     .faq .faq-area{gap: 10px; row-gap: 30px;}
 
-    .earth .content-area{align-items: end;}
-    .earth .top-box{flex-direction: column; gap: 10px;}
-    .earth .content-box{width: 268px;}
+    .earth .content-area{align-items: end; padding-top: 20px;}
+    .earth .top-box{ gap: 10px;}
+    .earth .content-box{width: 185px; font-size: 10px;line-height:120%}
+    .earth .left_box{width: 24px;height: 24px;}
+    .earth .section-title{font-size: 18px; white-space: nowrap;}
+    .earth .ab-text{bottom: 10px; font-size: 12px;}
+
+.mango-brand .mg{margin-right: 0;}
+.mango-brand .title_box{margin-right: 12.03%}
+
 }

@@ -203,10 +203,10 @@ section {
 .odm_box_item1{width: 55%; max-width: 400px;}
 .odm_box_item2{width: 45%; min-width: 350px; max-height: 350px; object-fit: cover;}
 
-.map-section{margin: 0;width: 100vw;}
-.map-section img{width: 100vw;}
+.map-section{margin: 0;width: 100vw; position: relative;}
+/* .map-section img{width: 100vw;} */
 
-
+.contractUsBtn{position: absolute; top: 50%; left: 50%; z-index: 2;max-width: 400px; width: 40%; transform: translate(-100%, -50%);} 
 
 
 /* section gap */
@@ -223,6 +223,23 @@ section {
 .email_tel_box{gap: 10px; flex-wrap: wrap; row-gap: 0;}
 
 .oem-odm .img_box{display: none;}
+
+
+
+.mapModal{position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);display: flex; z-index: 9999;}
+.mapModal.hide{top: 1000%;}
+.mapModal .right_box{position:relative;width: 200px;background: #E6E6E6; padding: 70px 10px 30px 20px; display: flex; flex-direction: column;justify-content: space-between;}
+.mapModal .right_box .info_top{font-size: 22px; font-weight: bold;}
+.mapModal .right_box .info_bottom{font-size: 18px;}
+.mapdiv.hide{position: fixed; top: 1000%;left: 0;}
+.closeBtn{position: absolute; top: 10px; right: 10px; font-size: 24px; padding: 0 10px; font-weight: 900; color: #fff; background: #222; border-radius: 99px; cursor: pointer;}
+.wrap_controllers {display: none;}
+.root_daum_roughmap .wrap_btn_zoom{margin: 0 !important; bottom: 20px !important; top: auto !important;}
+
+
+
+
+
     .pc_hide{display: none !important;}
 @media screen and (max-width:780px) {
     /* 780px 이하 */
