@@ -38,9 +38,12 @@
 .email_btn{width: 270px;}
 .email_btn_box{display: flex; justify-content: center; margin-top: 40px;}
 
-@media screen and (min-width:1080px) {
-.employ_info .rect_box{font-size: 18px;}
 
+@media screen and (min-width:1200px) {
+    .employ_info{margin: 0 auto;}
+}
+@media screen and (min-width:1080px) {
+    .employ_info .rect_box{font-size: 18px;}
 }
 @media screen and (min-width:900px) {
     .employ_info .title{font-size: 24px; min-width: 160px;}

@@ -129,7 +129,7 @@ section {
 .intro-content .content_box h3{font-weight: 700; font-size: 28px;}
 .cta-button{font-size:34px; font-weight: 700; color: #F1C542; display: flex;gap: 16px; align-items: center;}
 .intro-content-main .cta-button p{margin-bottom: 0;}
-.cta-button img{width:: 40px;}
+.cta-button img{width: 40px;}
 .intro-content-main p{margin-bottom: 10px;}
 .padding1{padding :0 6px}
 
@@ -242,7 +242,8 @@ section {
 
 .one_logo{width: 163px;}
 
-
+.insta_img{width: 33px;}
+    .nav-list .mo_hide img{width: 24px;}
     .pc_hide{display: none !important;}
 @media screen and (max-width:780px) {
     /* 780px 이하 */
