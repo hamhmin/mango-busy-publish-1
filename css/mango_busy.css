@@ -170,9 +170,10 @@
     .mango-brand .title_box img{width: 20%;}
     .mango-brand .title_box{margin-bottom: 10px;}
 
-    
-    .brands{padding: 30px;overflow: scroll; align-items: start;}
-    .brands img{min-width: 100px;}
+    .mango-brand .brand-tab div{font-size: 14px;padding: 8px 20px 8px 16px;}
+    div.brands{padding: 30px;overflow: scroll; align-items: start;}
+    div.brands img{min-width: 100px;}
+    section.brands img{max-width: 100px;}
     
     .faq .faq-item{width: calc((100% - 20px) /2);}
     .faq .faq-area{gap: 10px; row-gap: 30px;}

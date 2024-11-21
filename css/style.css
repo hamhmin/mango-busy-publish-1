@@ -57,7 +57,7 @@ body {
     transition: color 0.3s;
 }
 
-
+.main-content{overflow: hidden;}
 .section-main{
     width: 100vw;
     height: 100vh;
@@ -138,7 +138,7 @@ section {
 .brands .brand-list h3{min-width: 140px; display: flex;align-items: center; font-size: 26px;white-space: nowrap;}
 .brands .brand-list ul{display: flex; justify-content: space-between;width: 100%;align-items: center; color: #444;}
 .brands .brand-list ul li{width: 33%; text-align: center;}
-.brands .brand-list ul li img{width: 86%;}
+.brands .brand-list ul li img{width: 86%;object-fit: contain;}
 .brands .brand-list ul >img{margin-left: 20px;}
 
 .stores .section-title{font-weight: bold; font-size: 28px; margin-bottom: 36px;}
@@ -212,7 +212,7 @@ section {
 /* section gap */
 .intros{margin-bottom: 90px;}
 .brands{margin-bottom: 60px;}
-.stores{margin-bottom: 96px;}
+.stores{margin-bottom: 96px; position: relative;}
 .marketing{margin-bottom: 78px;}
 .oem-odm{margin-bottom: 85px;}
 
@@ -226,13 +226,13 @@ section {
 
 
 
-.mapModal{position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);display: flex; z-index: 9999;}
-.mapModal.hide{top: 1000%;}
-.mapModal .right_box{position:relative;width: 200px;background: #E6E6E6; padding: 70px 10px 30px 20px; display: flex; flex-direction: column;justify-content: space-between;}
-.mapModal .right_box .info_top{font-size: 22px; font-weight: bold;}
-.mapModal .right_box .info_bottom{font-size: 18px;}
+.mapModal{position: absolute;top: 81px;left: 50%;transform: translate(-50%, 0);display: flex; z-index: 9999;}
+.mapModal.hide{top: 1000%; left: 1000%;}
+.mapModal .right_box{position:relative;width: 200px;background: #E6E6E6; padding: 50px 10px 30px 20px; display: flex; flex-direction: column;justify-content: space-between;}
+.mapModal .right_box .info_top{font-size: 18px; font-weight: bold;}
+.mapModal .right_box .info_bottom{font-size: 14px;}
 .mapdiv.hide{position: fixed; top: 1000%;left: 0;}
-.closeBtn{position: absolute; top: 10px; right: 10px; font-size: 24px; padding: 0 10px; font-weight: 900; color: #fff; background: #222; border-radius: 99px; cursor: pointer;}
+.closeBtn{position: absolute; top: 10px; right: 10px; font-size: 16px; font-weight: 900; color: #fff; background: #222; border-radius: 99px; cursor: pointer; display: flex; justify-content: center; align-items: center; width: 26px; height: 26px;}
 .wrap_controllers {display: none;}
 .root_daum_roughmap .wrap_btn_zoom{margin: 0 !important; bottom: 20px !important; top: auto !important;}
 
@@ -310,6 +310,11 @@ section {
     .footer{justify-content: start;}
     .brands .brand-list ul li{display: flex;justify-content: center;align-items: center;}
 
+
+    .mapModal{flex-direction: column;}
+    .mapModal .right_box{width: 100%; padding: 20px;display: flex; flex-direction: column; gap: 40px;}
+
+    .closeBtn{z-index: 99;}
 }
 
 
