@@ -66,7 +66,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-image: url(/img2/1.jpg);
+    background-image: url(/img2/new/3.png);
+
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: var(--header-top);
@@ -127,6 +128,8 @@ section {
 .intro-content .content_box{padding-right: 0;}
 .intro-content .content_box h3{font-weight: 700; font-size: 28px;}
 .cta-button{font-size:34px; font-weight: 700; color: #F1C542; display: flex;gap: 16px; align-items: center;}
+.intro-content-main .cta-button p{margin-bottom: 0;}
+.cta-button img{width:: 40px;}
 .intro-content-main p{margin-bottom: 10px;}
 .padding1{padding :0 6px}
 
@@ -181,7 +184,7 @@ section {
 }
 .stores .active {
     flex:1.3; /* 1.5배 */
-    background-image:url(/img2/5.png);
+    background-image:url(/img2/new/7.png);
     background-repeat : no-repeat;
     background-size : cover;
 }
@@ -191,6 +194,7 @@ section {
 .marketing .marketing-info >div{ border: 1px solid #919191; margin-bottom: 34px; min-height: 120px;}
 .marketing .marketing-info .title_box{ width: 410px; padding-top: 40px; font-weight: bold; font-size: 28px; position: relative; display: flex;justify-content: center;align-items: center;}
 .marketing .marketing-info .title_box .img_box{position: absolute; top: -15px;left: 50%;transform: translateX(-50%);}
+.marketing .marketing-info .title_box .img_box .first_img{width: 50px;}
 .marketing .marketing-info .title_box img{z-index: 2;position: relative;}
 .marketing .marketing-info .title_box .img_box::after{content:"";position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%); width: calc(100% + 24px);height: calc(100%); background-color: white;}
 .marketing .marketing-info p{padding: 20px; font-size: 18px; display: flex;align-items: center;justify-content: center;}
@@ -207,7 +211,6 @@ section {
 /* .map-section img{width: 100vw;} */
 
 .contractUsBtn{position: absolute; top: 50%; left: 50%; z-index: 2;max-width: 400px; width: 40%; transform: translate(-100%, -50%);} 
-
 
 /* section gap */
 .intros{margin-bottom: 90px;}
@@ -237,7 +240,7 @@ section {
 .root_daum_roughmap .wrap_btn_zoom{margin: 0 !important; bottom: 20px !important; top: auto !important;}
 
 
-
+.one_logo{width: 163px;}
 
 
     .pc_hide{display: none !important;}

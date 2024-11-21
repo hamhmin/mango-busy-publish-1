@@ -52,7 +52,7 @@
 .partner .left_box ul li >div img{width: 70%; height: 70%; object-fit: contain;}
 
 
-.store-info{display: flex;padding: 40px 0 24px; flex-direction: column;} 
+.store-info{display: flex;padding: 40px 0 24px; flex-direction: column; position: relative;} 
 .store-info .section-title{font-size: 28px; font-weight: bold;white-space: nowrap;}
 .store-info .slide_section{display: flex; gap: 40px; flex-direction: column;}
 .store-slide-area{display: flex;height: 230px; overflow-x: scroll; gap: 6px; align-items: end;}
@@ -132,7 +132,7 @@
 }
 .store-info .active {
     flex:1.3; /* 1.5배 */
-    background-image:url(/img2/5.png);
+    background-image:url(/img2/new/7.png);
     background-repeat : no-repeat;
     background-size : cover;
 }
