@@ -137,6 +137,8 @@
     background-size : cover;
 }
 
+.comingSoonBox.active{background-image:none;background-color:#ddd;}
+
 @media screen and (max-width:780px) {
 .store-info .box {font-size: 13px;}
     .intros .logo_box img{width: 30%;}    
