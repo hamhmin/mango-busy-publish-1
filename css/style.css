@@ -190,8 +190,8 @@ section {
     background-position: center;
 }
 .openMapBox.active[data-name="myungdong"] {background-image:url(/img2/new/7.png);}
-.openMapBox.active[data-name="lotte"] {background-image:url(/img9/25.png);}
-.openMapBox.active[data-name="dongdaemun"] {background-image:url(/img9/24.png);}
+.openMapBox.active[data-name="lotte"] {background-image:url(/img9/24.png);}
+.openMapBox.active[data-name="dongdaemun"] {background-image:url(/img9/3.png);}
 .openMapBox.active[data-name="inchyun"] {background-image:url(/img9/23.png);}
 
 
