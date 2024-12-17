@@ -212,22 +212,25 @@
                 </div>
                 <div class="brand-area flex">
                     <div class="brand-tab">
-                        <div class="brand-tab-box active">회사 브랜드</div>
-                        <div class="brand-tab-box ">입점 브랜드</div>
-                        <div class="brand-tab-box ">파트너 브랜드</div>
+                        <div class="brand-tab-box active" data-type="corp">회사 브랜드</div>
+                        <div class="brand-tab-box " data-type="enter">입점 브랜드</div>
+                        <div class="brand-tab-box " data-type="part">파트너 브랜드</div>
                     </div>
                     <div class="brands">
-                        <div class="flex">
+                        <div class="toggle_brand_box corp_brand_box flex show">
                             <img src="/img2/logos/1.png" alt="">
                             <img src="/img2/logos/2.png" alt="">
                             <img src="/img2/logos/3.png" alt="">
-                            <img src="/img2/logos/2.png" alt="">
                         </div>
-                        <div class="flex">
-                            <img src="/img2/logos/1.png" alt="">
-                            <img src="/img2/logos/2.png" alt="">
-                            <img src="/img2/logos/3.png" alt="">
-                            <img src="/img2/logos/2.png" alt="">
+                        <div class="toggle_brand_box enter_brand_box flex">
+                            <img src="/img2/logos/4.png" alt="">
+                            <div class="flex flex-middle dummy_brand_img">Saranara</div>
+                            <img src="/img2/logos/6.2.png" alt="">
+                        </div>
+                        <div class="toggle_brand_box part_brand_box flex w100p">
+                            <div class="flex flex-middle dummy_brand_img">benetus</div>
+                            <div class="flex flex-middle dummy_brand_img">Orchind</div>
+                            <img src="/img2/logos/8.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -320,7 +323,13 @@
 
             $(".brand-tab-box").hover(function(){
                 $(".brand-tab-box").removeClass("active");
-                $(this).addClass("active")
+                $(this).addClass("active");
+                let type = $(this).attr("data-type");
+                if(type){
+                    $(".toggle_brand_box").removeClass("show");
+                    $("." + type + "_brand_box").addClass("show");
+                }
+
             });
 
             $(".openMapBox").on("click",function(){
@@ -348,6 +357,7 @@
                         break;
                     case "4":
                     $(".info_top").html("Mango busy<br>인천 인스파이어점");
+                    $(".info_bottom").html("인천광역시 중구 공항문화로 127 1층 <br>MANGO BUSY")
                     $(".mapdiv1").removeClass("hide");
                     
                         break;
